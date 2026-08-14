@@ -21,7 +21,7 @@ class Customers extends Table {
 
   /// الحد الائتماني للعميل. الصفر يعني بدون سقف.
   RealColumn get creditLimit =>
-      real().withDefault(const Constant(0));
+      real().withDefault(const Constant(0))();
 
   /// هل العميل نشط؟
   BoolColumn get isActive =>
